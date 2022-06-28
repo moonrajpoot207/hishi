@@ -1,0 +1,181 @@
+@import "index";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: wide;
+    src: url(../fonts/ObviouslyWide/ObviouslyDemo-Wide.otf);
+  }
+@font-face {
+    font-family: wideBlack;
+    src: url(../fonts/ObviouslyWide/ObviouslyDemo-WideBlack.otf);
+  }
+@font-face {
+    font-family: wideBold;
+    src: url(../fonts/ObviouslyWide/ObviouslyDemo-WideBold.otf);
+  }
+@font-face {
+    font-family: wideLight;
+    src: url(../fonts/ObviouslyWide/ObviouslyDemo-WideLight.otf);
+  }
+@font-face {
+    font-family: wideMedium;
+    src: url(../fonts/ObviouslyWide/ObviouslyDemo-WideMedium.otf);
+  }
+@font-face {
+    font-family: wideSemiBold;
+    src: url(../fonts/ObviouslyWide/ObviouslyDemo-WideSemibold.otf);
+  }
+@font-face {
+    font-family: wideSuper;
+    src: url(../fonts/ObviouslyWide/ObviouslyDemo-WideSuper.otf);
+  }
+@font-face {
+    font-family: wideThin;
+    src: url(../fonts/ObviouslyWide/ObviouslyDemo-WideThin.otf);
+  }
+
+body {
+    --text: #1a5632;
+    --text-gray: #637760;
+    --text-primary: #f9fcf8;
+    --button: #294428;
+    --gray: #707070;
+    --background: #e9ece8;
+    --background-2: #e3eae3;
+    --background-3: #CDDDD2;
+    --background-4: #447B55;
+    font-family: wide;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: wideMedium;
+    color: var(--text);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 12px;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+    font-family: wide;
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text);
+    font-weight: normal;
+    font-family: wide;
+}
+
+li {
+    list-style: none;
+}
+.btn-1{
+    padding: 11px 40px;
+    border: 1px solid transparent;
+    color: var(--text-primary);
+    background-color: var(--text);
+    font-size: 11px;
+    font-family: wideLight;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid var(--text);
+        background-color: var(--text-primary);
+        color: var(--text);
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        font-family: wideLight;
+    }
+}
+.btn-h6{
+    font-size: 10px;
+    padding: 10px;
+    border: 1px solid var(--text);
+    text-align: center;
+    font-family: wide;
+}
+.btn-div{
+    padding: 25px;
+    background-color: var(--text);
+    text-align: center;
+}
+.btn-a{
+    color: var(--text-primary);
+    font-family: 'widethin';
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+
+// Common Styling
+
+// ======= Nav ====== //
+nav{
+    padding: 20px 40px;
+    background-color: var(--background);
+}
+
+// ====== Sections ======//
+section{
+    padding: 0px 60px 80px;
+    background-color: var(--text-primary);
+}
+
+// Side Icons
+.section-para{
+    position: absolute;
+    width: 50%;
+    top: 80px !important;
+}
+.section-para--p{
+    color: var(--text);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    font-family: 'wideLight';
+    text-transform: uppercase;
+}

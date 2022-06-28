@@ -1,0 +1,136 @@
+.reviews{
+ padding-left: 0;
+ padding-right: 0;
+ padding-bottom: 10%;
+ background-color: var(--background-3);
+ position: relative;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .left-section{
+            display: grid;
+            .heading{
+                align-self: flex-end;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .wrapper{
+                margin: 0% 8%;
+                .input{
+                    background: var(--background-3);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0.5px solid var(--button);
+                    width: 100%;
+                    input{
+                        background-color: var(--background-3);
+                        outline: none;
+                        width: 100%;
+                        border: none;
+                        padding: 0px 15px;
+                        font-size: 15px;
+                        color: var(--text);
+                    }
+                        button{
+                            padding: 9px 18px;
+                            &:hover{
+                                border: 1px solid transparent;
+                                border-left: 1px solid var(--text);
+                            }
+                        }
+                }
+            }
+            .para{
+                top: 15px;
+                left: 15px;
+                p{
+                    top: 85px;
+                    left: -32px;
+                }
+            }
+        }
+        .right-section{
+            .heading{
+                h5{
+                    margin-left: 14%;
+                    margin-bottom: 5%;
+                }
+            }
+            .img{
+                text-align: end;
+                img{
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+// Media Quries
+@media (max-width: 575px) {
+    .reviews{
+           .container{
+               .left-section{
+                .heading{
+                    h5{
+                        font-size: 16px;
+                        margin: 0px 15px;
+                    }
+                }
+                .para{
+                    .icon{
+                        img{
+                            max-width: 40px;
+                        }
+                    }
+                    p{
+                        font-size: 10px;
+                        top: 71px;
+                        left: -28px;
+                    }
+                }
+               }
+               .right-section{
+                margin-top: 40px;
+                   .heading{
+                       h5{
+                           margin-left: 15% !important;
+                          margin-bottom: 2%;
+                          font-size: 16px;
+                       }
+                   }
+                   .img{
+                       img{
+                           width: 85% !important;
+                       }
+                   }
+               }
+           }
+       }
+}
+
+@media (max-width: 850px) {
+    .reviews{
+        padding-top: 40px;
+           .container{
+               .left-section{
+                    padding: 8% 0%;
+                   order: 2;
+               }
+               .right-section{
+                   order: 1;
+                   .heading{
+                       h5{
+                          margin-left: 40%;
+                       }
+                   }
+                   .img{
+                       img{
+                           width: 60%;
+                       }
+                   }
+               }
+           }
+       }
+}

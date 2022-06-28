@@ -1,0 +1,110 @@
+.sustainbility-2{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    .container{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        .left-section{
+            background-color: var(--background-4);
+            height: 100vh;
+            z-index: 1;
+            .img{
+                padding-left: 39%;
+                img{
+                    width: 100%;
+                    max-width: 320px;
+                    position: absolute;
+                    top: 9%;
+                    right: 51%;
+                }
+            }
+            .para{
+                top: 20px;
+                left: 15px;
+                p{
+                    color: var(--text-primary);
+                    top: 114px;
+                    left: -60px;
+                }
+            }
+        }
+        .right-section{
+            background-color: var(--text);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 0 7% 30% 30%;
+            .headings{
+                h5{
+                    color: var(--text-primary);
+                    margin-bottom: 30px;
+                }
+                p{
+                    color: var(--text-primary);
+                }
+            }
+        }
+    }
+}
+
+// Media Queries Start
+
+@media (max-width: 575px) {
+    .sustainbility-2{
+        .container{
+            
+            .left-section{
+                .img{
+                    
+                    img{
+                        max-width: 250px;
+                    }
+                }
+                .para{
+                    p{
+                        font-size: 10px;
+                        top: 106px;
+                        left: -50px;
+                    }
+                }
+            }
+            .right-section{
+                padding: 0 25% 19% 6% !important;
+                .headings{
+                    h5{
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .sustainbility-2{
+        .container{
+            gap: 0;
+            .left-section{
+                height: 50vh;
+                .img{
+                    img{
+                        top: unset;
+                        bottom: 35%;
+                        right: 26%;
+                    }
+                }
+            }
+            .right-section{
+                height: 50vh;
+                padding: 0 25% 7% 6%;
+            }
+        }
+    }
+}

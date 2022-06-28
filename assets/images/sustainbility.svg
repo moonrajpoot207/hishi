@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.707" height="25.707" viewBox="0 0 25.707 25.707">
+    <g data-name="Group 632">
+        <g data-name="Group 621">
+            <g data-name="Rectangle 767" style="stroke:#2e5435;fill:none">
+                <path style="stroke:none" d="M0 0h25v25H0z" transform="translate(.354 .354)"/>
+                <path style="fill:none" d="M.5.5h24v24H.5z" transform="translate(.354 .354)"/>
+            </g>
+            <g data-name="Rectangle 768" transform="translate(4.354 4.354)" style="stroke:#2e5435;fill:none">
+                <rect width="17" height="17" rx="8.5" style="stroke:none"/>
+                <rect x=".5" y=".5" width="16" height="16" rx="8" style="fill:none"/>
+            </g>
+            <path data-name="Line 277" transform="translate(.354 .354)" style="stroke:#2e5435;fill:none" d="M0 25 25 0"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+    <defs>
+        <clipPath id="pfnczj5vaa">
+            <path data-name="Rectangle 765" style="fill:#4d604e" d="M0 0h17.131v17.131H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="Group 625">
+        <g data-name="Rectangle 763" style="stroke:#2e5435;fill:none">
+            <path style="stroke:none" d="M0 0h25v25H0z"/>
+            <path style="fill:none" d="M.5.5h24v24H.5z"/>
+        </g>
+        <g data-name="Group 617">
+            <g data-name="Group 616" style="clip-path:url(#pfnczj5vaa)" transform="translate(3.934 3.935)">
+                <path data-name="Path 16005" d="M378.177 45.514h2.186V44.8h-3.569v3.569h.714v-2.483a7.849 7.849 0 0 1-1.583 13.125l.311.643a8.567 8.567 0 0 0 1.942-14.139z" transform="translate(-363.946 -43.372)" style="fill:#4d604e"/>
+                <path data-name="Path 16006" d="M311.8 504.531a8.544 8.544 0 0 0 1.117-.275l-.217-.68a7.756 7.756 0 0 1-1.024.252z" transform="translate(-301.747 -487.528)" style="fill:#4d604e"/>
+                <path data-name="Path 16007" d="M245.443 514.988c.247.021.5.032.744.032.125 0 .249 0 .373-.008l-.031-.713a7.909 7.909 0 0 1-1.024-.022z" transform="translate(-237.622 -497.889)" style="fill:#4d604e"/>
+                <path data-name="Path 16008" d="M175.3 500.555a8.529 8.529 0 0 0 1.118.33l.154-.7a7.755 7.755 0 0 1-1.024-.3z" transform="translate(-169.717 -483.957)" style="fill:#4d604e"/>
+                <path data-name="Path 16009" d="M0 34.391a8.569 8.569 0 0 0 2.9 6.424H.714v.714h3.569V37.96h-.714v2.483a7.849 7.849 0 0 1 1.583-13.124l-.311-.643A8.618 8.618 0 0 0 0 34.391z" transform="translate(0 -25.826)" style="fill:#4d604e"/>
+                <path data-name="Path 16010" d="M188.114 4.042a8.532 8.532 0 0 0-1.114.275l.217.68a7.767 7.767 0 0 1 1.024-.252z" transform="translate(-181.038 -3.913)" style="fill:#4d604e"/>
+                <path data-name="Path 16011" d="m258.17.743.061-.711a8.6 8.6 0 0 0-1.117-.024l.031.713a7.961 7.961 0 0 1 1.025.022z" transform="translate(-248.921)" style="fill:#4d604e"/>
+                <path data-name="Path 16012" d="M323.657 6.692a8.525 8.525 0 0 0-1.118-.33l-.154.7a7.757 7.757 0 0 1 1.024.3z" transform="translate(-312.112 -6.159)" style="fill:#4d604e"/>
+            </g>
+        </g>
+    </g>
+</svg>

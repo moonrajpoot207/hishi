@@ -1,0 +1,197 @@
+.index-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.index-nav .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 100px;
+}
+.navMenu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li{
+    margin-right: 27px;
+    font-size: 17px;
+    position: relative;
+    text-transform: uppercase;
+    &::before{
+    content: '';
+    background: var(--button);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+    }
+    a{
+    font-family: widemedium;
+    }
+    }
+}
+.index-nav .navbar .navMenu ul li:hover::before,
+.index-nav .navbar .navMenu ul li.active::before{
+    width: 100%;
+  }
+  nav{
+    .cancel{
+        display: none;
+        position: absolute !important;
+        top: 20px !important;
+        &::before{
+            display: none !important;
+        }
+    }
+    .cancel-btn{
+        font-size: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .cancel-content{
+        font-size: 7px;
+        color: var(--text);
+        margin-left: 12%;
+    }
+    .nav-footer{
+        display: none;
+        padding-left: 10%;
+        top: 10%;
+        &::before{
+            display: none !important;
+        }
+        .icons{
+            display: none;
+            align-items: center;
+            justify-content: start;
+            gap: 25px;
+        }
+        .twitter a svg{
+            fill: var(--text);
+        }
+        .made{
+            margin-top: 25px;
+            span{
+                margin-right: 10px;
+                color: var(--text);
+                text-transform: uppercase;
+                font-size: 11px;
+                font-family: 'wideMedium';
+            }
+        }
+        .reserved{
+            margin-top: 10px;
+            color: var(--text);
+            font-size: 8px;
+            span{
+                font-size: 11px;
+            }
+        }
+        .statement{
+            margin-top: 10px;
+            padding-right: 12%;
+            font-size: 8px;
+            color: var(--text);
+        }
+    }
+    .menu-btn{
+        display: none;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-align: end !important;
+    }
+  }
+
+//   Stciky Nav Start
+nav.sticky{
+    background-color: var(--background);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+//   Stciky Nav End
+
+
+// Media Queries Start
+@media (max-width: 768px){
+    nav{
+        overflow: hidden;
+        padding: 20px 20px !important;
+    }
+    .logo img{
+        width: 75px;
+    }
+    .navbar ul{
+        position: fixed !important;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: start !important;
+        transition: all 0.5s ease;
+        justify-content: center !important;
+        gap: 5%;
+        z-index: 1;
+        backdrop-filter: blur(27px);
+        li{
+        margin: 0 !important;
+        width: 100%;
+        padding-bottom: 10px;
+        top: 4%;
+        &::before{
+            width: 100% !important;
+            &:last-child{
+                width: 0px !important;
+            }
+        }
+        a{
+        padding-left: 15%;
+        }
+        }
+    }
+    nav .navbar.active ul{
+        left: 0;
+    }
+    nav{
+        .menu-btn{
+            display: block;
+            fill: var(--button);
+        }
+        .cancel{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cancel-btn{
+            color: var(--light);
+            fill: var(--text);
+        }
+        .icons{
+            display: flex !important;
+        }
+        .nav-footer{
+            display: block;
+        }
+    }
+    }
+
+@media (min-width: 769px) and (max-width: 960px){
+.logo img{
+    width: 75px;
+}
+.navMenu ul li{
+    font-size: 13px;
+}
+}

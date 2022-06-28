@@ -1,0 +1,125 @@
+.intelligent-skincare{
+    background-color: var(--button);
+    padding-top: 40px;
+    position: relative;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left-section{
+            .img{
+                text-align: center;
+                img{
+                    width: 75%;
+                    padding: 16px 9px;
+                    border: 1px solid var(--text-primary);
+                    border-radius: 13px;
+                }
+            }
+            .para{
+                top: 15px;
+                left: 15px;
+                width: 55% !important;
+                p{
+                    top: 145px;
+                    left: -92px;
+                    color: var(--text-primary) !important;
+                }
+            }
+        }
+        .right-section{
+            .content{
+                margin-bottom: 15%;
+                h5{
+                    color: var(--text-primary);
+                    margin-bottom: 20px;
+                    padding: 0 5%;
+                }
+                p{
+                    color: var(--text-primary);
+                    font-family: widelight;
+                    padding: 0 4% 0 5%;
+                }
+            }
+            .btns{
+                    h6{
+                        color: var(--text-primary);
+                        border: 1px solid var(--text-primary);
+                        background-color: var(--text);
+                    }
+                }
+                .btn{
+                    background-color: var(--text-primary);
+                    a{
+                        color: var(--text);
+                        font-family: wide;
+                    }
+                }
+            }
+        }
+    }
+
+// Media Queries Start
+@media (max-width: 575px) {
+    .intelligent-skincare{
+        padding-left: 20px;
+        padding-right: 20px;
+        .container{
+            .left-section{
+                margin-right: 0px;
+                .img{
+                    
+                    img{
+                        width: 55%;
+                    }
+                }
+                .para{
+                    .icon{
+                        img{
+                            max-width: 40px !important;
+                        }
+                    }
+                    p{
+                        top: 123px !important;
+                        left: -77px;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .right-section{
+                .content{
+
+                    h5{
+                        font-size: 18px !important;
+                    }
+                    p{
+                        font-size: 11px;
+                    }
+                }
+                .btns{
+                        h6{
+                            font-size: 8px;
+                        }
+                    }
+                    .btn{
+
+                        a{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        }
+
+@media (max-width: 850px) {
+    .intelligent-skincare{
+            .left-section{
+                .img{
+                    img{
+                        width: 50% !important;
+                    }
+                }
+            }
+            }
+        }

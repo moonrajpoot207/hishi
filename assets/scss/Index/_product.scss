@@ -1,0 +1,117 @@
+.products{
+    padding-top: 40px !important;
+    position: relative;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        .left-section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            .product{
+                .img{
+                    text-align: end;
+                    img{
+                        width: 90%;
+                    }
+                }
+            }
+            .img{
+                img{
+                    width: 90%;
+                }
+            }
+        }
+        .right-section{
+            .heading{
+                margin-bottom: 30px;
+                margin-left: 20px;
+                h5{
+                    width: 85%;
+                }
+            }
+            .img{
+             text-align: center;
+                img{
+                    width: 80%;
+                }
+            }
+            .para{
+                top: 15px;
+                left: 15px;
+                p{
+                    top: 95px;
+                    left: -40px;
+                }
+            }
+        }
+    }
+}
+
+// Media Quries
+
+@media (max-width: 575px) {
+    .products{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        .container{
+            gap: 10px !important;
+            .right-section{
+                .heading{
+                    padding-top: 15%;
+                   h5{
+                       font-size: 17px;
+                   }
+                }
+                }
+                .para{
+                    .icon{
+                        img{
+                            max-width: 40px;
+                        }
+                }
+                p{
+                    top: 78px !important;
+                    left: -35px !important;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+    .products{
+        .container{
+            gap: 30px;
+            .left-section{
+                order: 2;
+                .product{
+                    .img{
+                        img{
+                            width: 80.5%;
+                        }
+                    }
+                }
+                .img{
+                    img{
+                        width: 80.5%;
+                    }
+                }
+            }
+            .right-section{
+                order: 1;
+                .heading{
+                    margin-left: 40px;
+                }
+                }
+                .para{
+                    .icon{
+                        img{
+                            width: fit-content !important;
+                        }
+                }
+            }
+        }
+    }
+}

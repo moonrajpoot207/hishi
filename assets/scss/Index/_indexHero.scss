@@ -1,0 +1,130 @@
+.hero-section{
+    padding-top: 80px !important;
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.left-section{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    align-self: flex-start;
+    margin: 40px 30px 0px 0px;
+    h4{
+        font-size: 20px;
+        span{
+            color: var(--text-gray);
+        }
+    }
+}
+.mid-section{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    align-self: flex-start;
+    margin: 30px 30px 0px 0px;
+}
+.right-section{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+        img{
+            width: 100%;
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .icon{
+            display: flex;
+        flex-direction: column;
+            .icon-img{
+                text-align: center;
+                img{
+                    width: 35px;
+                }
+            }
+            span{
+                font-size: 10px;
+                color: var(--text);
+            }
+        }
+    }
+}
+}
+
+//Media Queries Start
+@media (max-width: 575px) {
+    .hero-section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .left-section{
+        h4{
+        width: 80%;
+        font-size: 16px !important;
+        margin-left: 30px;
+        }
+    }
+    .mid-section{
+        .heading{
+            h6{
+            font-size: 8px;
+            padding: 8px;
+            }
+        }
+        .btn{
+            padding: 18px;
+            a{
+                font-size: 11px;
+            }
+        }
+    }
+    .right-section{
+            img{
+                width: 100%;
+            }
+            .icon{
+                    img{
+                        width: 27px !important;
+                    }
+                span{
+                    font-size: 8px !important;
+                    text-align: center;
+                }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 850px) {
+    .left-section{
+        h4{
+        width: 70%;
+        margin-left: 40px;
+        }
+    }
+    .right-section{
+            img{
+                width: 85%;
+            }
+    }
+}
+
+// Common Media Queries
+@media (max-width: 850px) {
+    .container{
+        display: flex !important;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .mid-section{
+        order: 3;
+        margin: 0 !important;
+    }
+    .icons{
+        justify-content: center;
+        gap: 5%;
+    }
+}
